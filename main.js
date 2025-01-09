@@ -23,3 +23,13 @@ kmUtente = parseInt(prompt("Inserisci i km che percorrerai", 100));
 const prezzoPerKm = 0.21;
 let costoBiglietto = kmUtente * 0.21;
 
+//verifica sconti
+
+if (etaUtente < 18) {
+    costoBiglietto = costoBiglietto - [(costoBiglietto * 20) / 100];
+} else if (etaUtente > 65) {
+    costoBiglietto = costoBiglietto - [(costoBiglietto * 40) / 100];
+}
+
+
+
