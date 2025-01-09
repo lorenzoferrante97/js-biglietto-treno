@@ -31,5 +31,11 @@ if (etaUtente < 18) {
     costoBiglietto = costoBiglietto - [(costoBiglietto * 40) / 100];
 }
 
+//massimo due decimali
 
+costoBiglietto = costoBiglietto.toFixed(2);
+
+//risultato
+
+console.log(`il costo finale del tuo biglietto è: ${costoBiglietto} `)
 
