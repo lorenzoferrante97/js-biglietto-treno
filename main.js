@@ -17,3 +17,9 @@
 let etaUtente = prompt("Inserisci la tua età", 15);
 let kmUtente;
 kmUtente = parseInt(prompt("Inserisci i km che percorrerai", 100));
+
+//calcolo costo iniziale biglietto
+
+const prezzoPerKm = 0.21;
+let costoBiglietto = kmUtente * 0.21;
+
