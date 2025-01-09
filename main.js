@@ -11,3 +11,9 @@
 //      - applicazione dello sconto se applicabile
 // 3. inizializzare il num a sole due cifre decimali
 // 4. stampare risultato
+
+// code
+
+let etaUtente = prompt("Inserisci la tua età", 15);
+let kmUtente;
+kmUtente = parseInt(prompt("Inserisci i km che percorrerai", 100));
