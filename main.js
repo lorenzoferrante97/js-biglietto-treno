@@ -18,16 +18,23 @@ let etaUtente = prompt("Inserisci la tua età", 15);
 let kmUtente;
 kmUtente = parseInt(prompt("Inserisci i km che percorrerai", 100));
 
+console.log(`la tua età: ${etaUtente}`)
+console.log(`i km che percorrerai: ${kmUtente}`)
+
 //calcolo costo iniziale biglietto
 
 const prezzoPerKm = 0.21;
 let costoBiglietto = kmUtente * 0.21;
 
+console.log(`costo iniziale biglietto: ${costoBiglietto}`)
+
 //verifica sconti
 
 if (etaUtente < 18) {
+    console.log(`sconto per minorenni del 20% applicato`);
     costoBiglietto = costoBiglietto - [(costoBiglietto * 20) / 100];
 } else if (etaUtente > 65) {
+    console.log(`sconto per over 65 del 40% applicato`);
     costoBiglietto = costoBiglietto - [(costoBiglietto * 40) / 100];
 }
 
